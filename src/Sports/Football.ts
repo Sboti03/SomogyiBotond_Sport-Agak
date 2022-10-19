@@ -3,19 +3,19 @@ export class Football implements  Results{
     
     winner: string;
     date: Date;
-    #goolCountWinner: number
-    #goolCountLosser: number
-    constructor(winner : string, date : Date, goolCountWinner : number, goolCountLooser : number) {
+    #goalCountWinner: number
+    #goalCountLosser: number
+    constructor(winner : string, date : Date, goalCountWinner : number, goalCountLooser : number) {
         this.winner = winner;
         this.date = date;
-        this.#goolCountWinner = goolCountWinner;
-        this.#goolCountLosser = goolCountLooser;
+        this.#goalCountWinner = goalCountWinner;
+        this.#goalCountLosser = goalCountLooser;
     }
     
     
     
     result(): string {
-        return `Football match: ${this.#goolCountWinner}-${this.#goolCountLosser}`
+        return `Football match: ${this.#goalCountWinner}-${this.#goalCountLosser}`
     }
     
 }
